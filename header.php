@@ -35,10 +35,7 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
   </head>
-  <body class="<?php
-  echo get_post_type() . ' ';
-  if(is_front_page()) { echo 'front'; } else { echo $post->post_name; }
-  ?>">
+  <body <?php body_class(); ?>>
     <header id="header">
       <div class="container">
         <h1 id="site-logo"><a href="<?php bloginfo('siteurl'); ?>"><?php bloginfo('name'); ?></a></h1>
