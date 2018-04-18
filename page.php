@@ -1,7 +1,10 @@
-<?php get_header(); ?>
-<h1><?php the_title(); ?></h1>
 <?php
+get_header();
+
+echo '<h1>' . get_the_title() . '</h1>' . "\n";
+
 the_post();
 the_content();
+
+get_footer();
 ?>
-<?php get_footer(); ?>

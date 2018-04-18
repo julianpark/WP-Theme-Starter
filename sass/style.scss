@@ -1,0 +1,56 @@
+/*
+Theme Name:
+Theme URI:
+Author: Julian Park
+Author URI: http://julianpark.net
+Description: Developed by Julian Park.
+Version: 1.0
+
+Table of Contents
+-----------------
+VENDORS
+  Bootstrap 4.1.0
+
+Variables
+Fonts
+WordPress Core
+Global
+Header
+Footer
+Front Page
+
+RESPONSIVE
+  min-1-sm: 576px
+  min-2-md: 768px
+  min-3-lg: 992px
+  min-4-xl: 1200
+CROSS BROWSER
+  Webkit
+  Safari
+  Edge
+*/
+
+/* VENDORS */
+@import '../gulp-automation/node_modules/bootstrap/scss/bootstrap';
+/* end VENDORS */
+
+@import '_partials/_variables';
+@import '_partials/_fonts';
+@import '_partials/_wp-core';
+@import '_partials/_global';
+@import '_partials/_header';
+@import '_partials/_footer';
+@import '_partials/_front-page';
+
+/* RESPONSIVE */
+@import '_partials/_min-1-sm';
+@import '_partials/_min-2-md';
+@import '_partials/_min-3-lg';
+@import '_partials/_min-4-xl';
+/* end RESPONSIVE */
+
+/* CROSS BROWSER */
+@import '_partials/_browser-webkit';
+@import '_partials/_browser-safari';
+@import '_partials/_browser-edge';
+/* end CROSS BROWSER */

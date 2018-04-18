@@ -14,6 +14,7 @@ function add_slug_body_class( $classes ) {
 add_filter( 'body_class', 'add_slug_body_class' );
 
 /*
+Custom Post Type
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
   register_post_type( 'app',
