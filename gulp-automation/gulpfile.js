@@ -11,7 +11,8 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
   gulp.src([
-    '../js/**/*.js',
+    '../js/vendors/*.js',
+    '../js/modules/*.js'
     ])
     //.pipe(jshint())
     //.pipe(jshint.reporter('fail'))
