@@ -8,7 +8,7 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
 
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>?v=2018.04.18.1">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>?v=2018.12.03.1">
 
     <!-- WP HEAD -->
     <?php wp_head(); ?>
