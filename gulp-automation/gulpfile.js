@@ -11,6 +11,8 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
   gulp.src([
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.min.js',
     '../js/vendors/*.js',
     '../js/modules/*.js'
     ])
