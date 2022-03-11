@@ -29,16 +29,16 @@ CROSS BROWSER
 @import '../node_modules/bootstrap/scss/bootstrap';
 /* end VENDORS */
 
-@import '_partials/_variables';
-@import '_partials/_fonts';
-@import '_partials/_wp-core';
-@import '_partials/_global';
-@import '_partials/_header';
-@import '_partials/_footer';
-@import '_partials/_front-page';
+@import 'variables';
+@import 'fonts';
+@import 'wp-core';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'front-page';
 
 /* CROSS BROWSER */
-@import '_partials/_browser-webkit';
-@import '_partials/_browser-safari';
-@import '_partials/_browser-edge';
+@import 'browser-webkit';
+@import 'browser-safari';
+@import 'browser-edge';
 /* end CROSS BROWSER */
