@@ -4,9 +4,9 @@ var sass = require("gulp-sass")(require("sass"));
 var concat = require('gulp-concat');
 
 function sassTask() {
-  return gulp.src('../sass/**/*.scss')
+  return gulp.src('sass/**/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(gulp.dest('../')
+    .pipe(gulp.dest('.')
   );
 }
 
@@ -14,16 +14,16 @@ function jsTask() {
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    '../js/vendors/*.js',
-    '../js/modules/*.js'
+    'js/vendors/*.js',
+    'js/modules/*.js'
     ])
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('../js/'));
+    .pipe(gulp.dest('js/'));
 }
 
 function watchTask() {
-  gulp.watch('../sass/**/*.scss', sassTask);
-  gulp.watch('../js/**/*.js', jsTask);
+  gulp.watch('sass/**/*.scss', sassTask);
+  gulp.watch('js/**/*.js', jsTask);
 }
 
 exports.default = gulp.series(
